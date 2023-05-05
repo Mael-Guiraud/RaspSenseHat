@@ -1,4 +1,4 @@
-# On importe les librairies nécessaires aaa
+# On importe les librairies nécessaires 
 from sense_hat import SenseHat
 import time
 import urllib.request
