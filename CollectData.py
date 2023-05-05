@@ -18,7 +18,7 @@ red = (255, 0, 0)
 orange = (255, 165, 0)
 green = (0, 255, 0)
 purple = (160, 32, 240)
-
+blue = (0, 0, 255)
 #Initialisation, on affiche en orange et on attend le temps nécéssaire à ce que la carte réseau soit lancée
 while True:
 	
@@ -58,7 +58,7 @@ while True:
         ipv4 = os.popen('ip addr show wlan0 | grep "\<inet\>" | awk \'{ print $2 }\' | awk -F "/" \'{ print $1 }\'').read().strip()
         print(ipv4)
         sense.show_message(ipv4[-3:],0.2)
-        sense.clear(green)
+        sense.clear(blue)
         os.system("echo "+ipv4)
         print(ret)
         i+=1
