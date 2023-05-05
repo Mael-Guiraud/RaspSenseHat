@@ -1,4 +1,4 @@
-# titioto On importe les librairies nécessaires
+# On importe les librairies nécessaires
 from sense_hat import SenseHat
 import time
 import urllib.request
@@ -58,7 +58,7 @@ while True:
         ipv4 = os.popen('ip addr show wlan0 | grep "\<inet\>" | awk \'{ print $2 }\' | awk -F "/" \'{ print $1 }\'').read().strip()
         print(ipv4)
         sense.show_message(ipv4[-3:],0.2)
-        sense.clear(orange)
+        sense.clear(green)
         os.system("echo "+ipv4)
         print(ret)
         i+=1
