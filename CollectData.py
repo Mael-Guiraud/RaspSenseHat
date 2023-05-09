@@ -1,4 +1,4 @@
-# On importe les librairies nécessaires  
+# On importe les librairies nécessairesaaaa  
 from sense_hat import SenseHat
 import time
 import urllib.request
@@ -19,6 +19,8 @@ orange = (255, 165, 0)
 green = (0, 255, 0)
 purple = (160, 32, 240)
 blue = (0, 0, 255)
+
+
 
 i=0
 #On tourne en boucle
