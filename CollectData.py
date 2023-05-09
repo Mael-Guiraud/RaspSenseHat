@@ -48,11 +48,9 @@ while True:
             ret = urllib.request.urlopen(url)
             i=0
         ipv4 = os.popen('ip addr show wlan0 | grep "\<inet\>" | awk \'{ print $2 }\' | awk -F "/" \'{ print $1 }\'').read().strip()
-        print(ipv4)
         sense.show_message(ipv4[-3:],0.2)
         sense.clear(blue) 
-        os.system("echo "+ipv4)
-        print(ret)
+        print("ip: ",ipv4,"Request : ",ret)
         i+=1
         
     except Exception as e:
