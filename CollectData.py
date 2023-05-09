@@ -46,12 +46,12 @@ while True:
     try:
         if not i%10: #tous les 10 pas de temps on envoie la requette (1 pas de temps = 1/10 * sleep time between two measures)
             ret = urllib.request.urlopen(url)
-            os.system("echo Envoi requette"+ret)
+            print(ret)
 
             i=0
         ipv4 = os.popen('ip addr show wlan0 | grep "\<inet\>" | awk \'{ print $2 }\' | awk -F "/" \'{ print $1 }\'').read().strip()
         sense.show_message(ipv4[-3:],0.2)
-        os.system("echo Adresse ip"+ipv4)
+        print(ipv4)
         sense.clear(green)
         i+=1
         
