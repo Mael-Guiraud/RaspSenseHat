@@ -54,7 +54,7 @@ while True:
         ipv4 = os.popen('ip addr show wlan0 | grep "\<inet\>" | awk \'{ print $2 }\' | awk -F "/" \'{ print $1 }\'').read().strip()
         sense.show_message(ipv4[-3:],0.2)
         print(ipv4)
-        sense.clear(orange)
+        sense.clear(green)
         i+=1
         
     except Exception as e:
