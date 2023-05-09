@@ -3,11 +3,11 @@ from sense_hat import SenseHat
 import time
 import urllib.request
 import os
-import apikey 
+import params 
 #Parametrage du temps d'attente entre les différentes mesures
-sleep_between_two_measures = 60
+sleep_between_two_measures = params.sleep
 # On renseigne sa clé API permettant d'écrire sur le channel
-API = apikey.key
+API = params.key
 
 
 # On démarre le module Sense HAT
@@ -19,15 +19,7 @@ orange = (255, 165, 0)
 green = (0, 255, 0)
 purple = (160, 32, 240)
 blue = (0, 0, 255)
-#Initialisation, on affiche en orange et on attend le temps nécéssaire à ce que la carte réseau soit lancée
-while True:
-	
-	try: 
-		urllib.request.urlopen("http://google.com")
-		break;
-	except:
-		sense.clear()
-		sense.clear(orange)
+
 i=0
 #On tourne en boucle
 while True:
