@@ -16,7 +16,7 @@ sense = SenseHat()
 #Définition des couleurs
 red = (255, 0, 0)
 orange = (255, 165, 0)
-green = (0, 255, 0)
+green = (100, 255, 157)
 purple = (160, 32, 240)
 blue = (0, 0, 255)
 
